@@ -3887,6 +3887,7 @@ class f7xn(Variable):
     entity = FoyerFiscal
     label = u"Investissements locatifs dans le secteur de touristique, logement neuf: report des dépenses d'investissement des années antérieures"
     # start_date = date(2012, 1, 1)
+    end = '2017-12-31'
     definition_period = YEAR
 
 
@@ -3939,6 +3940,7 @@ class f7xv(Variable):
     entity = FoyerFiscal
     label = u"Investissements locatifs dans le secteur de touristique: Report des dépenses d'investissement des années antérieures"
     # start_date = date(2012, 1, 1)
+    end = '2017-12-31'
     definition_period = YEAR
 
 
@@ -5826,6 +5828,7 @@ class f7kc(Variable):
     entity = FoyerFiscal
     label = u"Dépenses de protection du patrimoine naturel (excédent de réduction d’impôt d’années antérieures qui n’a pu être imputé)"
     # start_date = date(2012, 1, 1)
+    end = '2017-12-31'
     definition_period = YEAR
 
 
