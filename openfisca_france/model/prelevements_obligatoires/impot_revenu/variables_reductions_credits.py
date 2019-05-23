@@ -1078,7 +1078,7 @@ class f7wi_2012(Variable):
     definition_period = YEAR
 
 
-class f7wi(Variable):
+class f7wi_2015(Variable):
     cerfa_field = u"7WI"
     value_type = int
     unit = 'currency'
@@ -1086,6 +1086,16 @@ class f7wi(Variable):
     label = u"Dépenses en faveur de l'aide aux personnes réalisées dans l'habitation principale: dépenses payées en 2015 de matériaux d'isolation des toitures, posés sur une partie de la toiture"
     # start_date = date(2015, 1, 1)
     end = '2015-12-31'
+    definition_period = YEAR
+
+
+class f7wi(Variable):
+    cerfa_field = u"7WI"
+    value_type = int
+    unit = 'currency'
+    entity = FoyerFiscal
+    label = u"Dépenses en faveur de l'aide aux personnes réalisées dans l'habitation principale: équipements permettant l’adaptation des logements à la perte d’autonomie ou au handicap"
+    # start_date = date(2018, 1, 1)
     definition_period = YEAR
 
 
