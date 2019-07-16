@@ -49,7 +49,6 @@ class ppa_eligibilite_etudiants(Variable):
     definition_period = MONTH
 
     def formula(famille, period, parameters):
-        P = parameters(period)
         ppa_majoree_eligibilite = famille('rsa_majore_eligibilite', period)
 
         etudiant_i = famille.members('etudiant', period)
@@ -70,8 +69,7 @@ class ppa_eligibilite_etudiants(Variable):
             )
 
         condition_non_etudiant_i = (
-            not_(etudiant_i) *
-            (
+            not_(etudiant_i) * (
                 condition_ressource(m_1, 0)
                 + condition_ressource(m_2, 0)
                 + condition_ressource(m_3, 0)
