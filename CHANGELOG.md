@@ -1,5 +1,20 @@
 # Changelog
 
+## 48.3.0[#1365](https://github.com/openfisca/openfisca-france/pull/1365)
+
+*Correction d'un crash.
+* Périodes concernées : toutes.
+*Zones impactées : openfisca_france/model/prestations/autonomie.py
+    les variables impactées sont 'apa_domicile', 'apa_etablissement' et 'apa_urgence_domicile'.
+    Détails :
+        Description de la fonctionnalité ajoutée ou du nouveau comportement adopté. Modification des lignes problématiques pour correspondre à la librairie utilisée comme indiqué dans l'issue [1359](https://github.com/openfisca/openfisca-france/issues/1359).
+        Cas dans lesquels une erreur était constatée: voir issue [1359](https://github.com/openfisca/openfisca-france/issues/1359).
+	et issue [1363](https://github.com/openfisca/openfisca-france/issues/1363).
+
+Ces changements:
+    Corrigent ou améliorent un calcul déjà existant.
+
+
 ## 48.2.0 [#1355](https://github.com/openfisca/openfisca-france/pull/1355)
 
 * Évolution du système socio-fiscal.
